@@ -12,3 +12,19 @@ At the time of writing Ansible is the only dependencies for using this project. 
 | Demo        | Running           | Description  |
 | :-------------: |:-------------:| :-----:|
 | weblogs-demo | ansible-playbook -i host weblogs-demo.yml | Demonstrates tailing NGinx info and error logs with MiNiFi C++ agents and streaming those logs to NiFi |
+
+## IP
+
+The full host name for these is going to be in the AWS portion of the host file
+
+**EFM**
+
+```text
+10080/efm/ui/
+```
+
+**NiFi**
+
+```text
+8080/nifi/
+```
