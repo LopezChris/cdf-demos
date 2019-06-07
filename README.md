@@ -2,7 +2,7 @@
 
 ## Project Goal
 
-This project was created in order to make demonstrating capabilties of the Cloudera Data Flow Platform more consumable and reproducable. There have been several really awesome demos over the years but they have not been captured in a means that allows for people to spin them up and try for themselves. This project aims to make people more creative; be curious! Get in here and build something fun and then share it with the world!
+This project was created in order to make demonstrating capabilities of the Cloudera Data Flow Platform more consumable and reproducible. There have been several really awesome demos over the years but they have not been captured in a means that allows for people to spin them up and try for themselves. This project aims to make people more creative; be curious! Get in here and build something fun and then share it with the world!
 
 ## Pre-Requisites
 
@@ -10,17 +10,21 @@ At the time of writing Ansible is the only dependencies for using this project. 
 
 ## Running
 
-## Demos
+### Demos
 
 | Demo        | Running           | Description  |
 | :-------------: |:-------------:| :-----:|
 | weblogs-demo | ansible-playbook -i host weblogs-demo.yml | Demonstrates tailing NGinx info and error logs with MiNiFi C++ agents and streaming those logs to NiFi |
 
-## Instructions
+## Deploy CEM
 
-Spin-up a few EC2 instances for which you have the private key available to you, ensure that the appropriate ports are open for NiFi, NiFi Registry and EFM to work properly.
+### Instructions
 
-Clone this repository
+Spin-up an EC2 instance for which you have the private key available, ensure that the appropriate ports are open for NiFi, NiFi Registry and EFM to work properly.
+
+[More Details on ports needed can be found in the CEM documentation](https://docs.hortonworks.com/HDPDocuments/CEM/CEM-1.0.0/installation/content/install-efm-server.html)
+
+Next, clone this repository onto your local computer
 
 ~~~bash
 git clone https://github.com/jdye64/cdf-demos.git
@@ -41,6 +45,8 @@ Finally, give the full path your `.pem` private key to the `ansible_ssh_private_
 ~~~bash
 ansible-playbook -i host efm-10-install.yml
 ~~~
+
+Once Ansible is done configuring your AWS machine you may navigate to EFM and NiFi
 
 ### EFM
 
