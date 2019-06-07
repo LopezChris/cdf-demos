@@ -20,11 +20,11 @@ The full host name for these is going to be in the AWS portion of the host file
 **EFM**
 
 ```text
-10080/efm/ui/
+<AWS-public-host-name>:10080/efm/ui/
 ```
 
 **NiFi**
 
 ```text
-8080/nifi/
+<AWS-public-host-name>:8080/nifi/
 ```
