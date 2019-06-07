@@ -1,17 +1,2 @@
 [aws]
-ec2-13-56-232-254.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
-
-[weblogs-demo]
-ec2-18-144-31-186.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
-
-[nifi]
-ec2-52-53-229-183.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
-
-[mathias_bosch]
-ec2-18-144-31-186.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
-
-[george_efm]
-ec2-18-144-31-186.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
-
-[efm_master]
-ec2-52-53-229-183.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
+ec2-13-57-11-187.us-west-1.compute.amazonaws.com ansible_user=centos ansible_ssh_private_key_file=/Users/cfarnes/.ssh/Cfarnes-CEM.pem
