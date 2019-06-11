@@ -59,3 +59,27 @@ Once Ansible is done configuring your AWS machine you may navigate to EFM and Ni
 ```text
 <AWS-public-host-name>:8080/nifi/
 ```
+
+## Small MiNiFi C++ Agent
+
+SSH on to the machine assigned to be the agent
+
+~~~bash
+wget http://mirrors.ibiblio.org/apache/nifi/nifi-minifi-cpp/0.6.0/nifi-minifi-cpp-bionic-0.6.0-bin.tar.gz
+
+tar -xvf nifi-minifi-cpp-bionic-0.6.0-bin.tar.gz
+
+scp -i ~/.ssh/Cfarnes-CEM.pem ~/Desktop/minifi.properties ubuntu@ec2-54-215-240-129.us-west-1.compute.amazonaws.com:/home/ubuntu/nifi-minifi-cpp-0.6.0/conf
+
+vi minifi.properties
+~~~
+
+Enter your public host name in these fields
+
+```nifi.c2.agent.coap.host=<Public DNS>```
+
+```nifi.c2.flow.base.url=<Public DNS>:10080/efm/api```
+
+```nifi.c2.rest.url=<Public DNS>:10080/efm/api/c2-protocol/heartbeat```
+
+```nifi.c2.rest.url.ack=<Public DNS>:10080/efm/api/c2-protocol/acknowledge```
